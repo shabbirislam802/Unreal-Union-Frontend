@@ -27,7 +27,7 @@
               <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
             </svg>
           </span>
           </button>
@@ -42,44 +42,44 @@
               class="mr-auto flex flex-col lg:flex-row"
               data-te-navbar-nav-ref>
             <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-              <a
+              <router-link
                   class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                  href="#/"
+                  to="/"
                   data-te-nav-link-ref
                   data-te-ripple-init
                   data-te-ripple-color="light"
-              >Home</a
-              >
+              >Home
+              </router-link>
             </li>
             <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-              <a
+              <router-link
                   class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                  href="#/profile"
+                  to="/profile"
                   data-te-nav-link-ref
                   data-te-ripple-init
                   data-te-ripple-color="light"
-              >Profile</a
-              >
+              >Profile
+              </router-link>
             </li>
             <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-              <a
+              <router-link
                   class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                  href="#/sign-in"
+                  to="/sign-in"
                   data-te-nav-link-ref
                   data-te-ripple-init
                   data-te-ripple-color="light"
-              >Sign-In</a
-              >
+              >Sign-In
+              </router-link>
             </li>
             <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-              <a
+              <router-link
                   class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                  href="#/sign-up"
+                  to="/sign-up"
                   data-te-nav-link-ref
                   data-te-ripple-init
                   data-te-ripple-color="light"
-              >Sign-Up</a
-              >
+              >Sign-Up
+              </router-link>
             </li>
           </ul>
         </div>
@@ -89,7 +89,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import {ref} from 'vue'
 
 </script>
 
