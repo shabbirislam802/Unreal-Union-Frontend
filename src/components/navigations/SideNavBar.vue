@@ -1,6 +1,6 @@
 <template>
-  <div class="flex h-screen bg-gray-100">
-    <div class="flex flex-col w-64 bg-white shadow-md">
+  <div class="flex flex-wrap sm:flex-nowrap h-screen bg-gray-100">
+    <div class="flex flex-col w-full sm:w-64 bg-white shadow-md">
       <ul class="flex flex-col py-4">
         <li>
           <router-link :to="{name: 'My-Event'}" class="flex items-center p-4 hover:bg-gray-200">
@@ -18,7 +18,7 @@
       </ul>
     </div>
 
-    <div class="flex-grow p-6">
+    <div class="flex-grow max-[640px]:w-full p-1 ms:p-6">
       <router-view v-slot="{ Component }">
         <transition name="fade">
           <component :is="Component" />

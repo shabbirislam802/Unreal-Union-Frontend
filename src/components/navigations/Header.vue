@@ -3,7 +3,6 @@ import {computed, ref} from 'vue';
 import {useStore} from 'vuex';
 
 const store = useStore();
-
 const isOpen = ref(false);
 const isSignIn = computed(() => store.state.isSignIn);
 </script>
@@ -27,8 +26,11 @@ const isSignIn = computed(() => store.state.isSignIn);
           class="border border-white px-3 py-2 rounded text-white lg:hidden"
           type="button"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4">
+        <svg v-if="!isOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"/>
+        </svg>
+        <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
         </svg>
       </button>
 

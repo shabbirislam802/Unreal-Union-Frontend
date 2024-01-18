@@ -50,7 +50,7 @@ function unregisterEvent(eventId) {
 </script>
 
 <template>
-  <div class="container mx-auto p-8">
+  <div class="container mx-auto p-1 ms:p-8">
     <div class="mb-10">
       <h2 class="text-2xl font-bold mb-5">My Events</h2>
       <div v-if="createdEvents.length === 0" class="text-gray-600">

@@ -19,7 +19,7 @@ Schritt 2: Erstellen der .env-Datei
 
 Erstellen Sie eine .env-Datei im Root-Verzeichnis des Projekts und definieren Sie die erforderlichen Umgebungsvariablen.
 
-VITE_APP_ROOT_API=http://127.0.0.1/api/unreal-union/v1
+VITE_APP_ROOT_API=https://web-project.shabbirislam.me/api/unreal-union/v1
 
 Schritt 3: Erstellen des Docker-Images
 
@@ -36,3 +36,4 @@ docker run -d -p 8080:80 my-app
 Zugriff
 
 Nachdem der Container gestartet wurde, ist die Anwendung über http://localhost:8080 in Ihrem Webbrowser erreichbar.
+``
